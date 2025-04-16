@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>失語症の教材</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+
+    header {
+      background-color: #f0f0f0;
+      padding: 10px 20px;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .site-title {
+      font-size: 1.5em;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+    }
+
+    .container {
+      display: flex;
+      flex: 1;
+    }
+
+    .main-content {
+      flex: 3;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-right: 1px solid #ccc;
+    }
+
+    .main-content iframe {
+      width: 90%;
+      height: 90%;
+      border: none;
+    }
+
+    .sidebar {
+      flex: 1;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+
+    .sidebar ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
+    .sidebar li {
+      margin-bottom: 10px;
+    }
+
+    .sidebar a {
+      color: #007acc;
+      text-decoration: none;
+    }
+
+    .sidebar a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="site-title">失語症の教材</div>
+    <nav>
+      <a href="#">HOME</a>
+      <a href="#">ABOUT</a>
+      <a href="#">CONTACT</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="main-content">
+      <!-- PDFがここに埋め込まれます -->
+      <iframe src="sample.pdf" id="pdfViewer"></iframe>
+    </div>
+
+    <div class="sidebar">
+      <ul>
+        <li><a href="pdf1.pdf" target="pdfViewer">課題 1</a></li>
+        <li><a href="pdf2.pdf" target="pdfViewer">課題 2</a></li>
+        <li><a href="pdf3.pdf" target="pdfViewer">課題 3</a></li>
+        <li><a href="pdf4.pdf" target="pdfViewer">課題 4</a></li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+</html>
